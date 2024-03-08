@@ -45,6 +45,8 @@ func main() {
 	}
 	flag.Parse()
 
+	time.Sleep(50 * time.Millisecond)
+
 	fi, err := os.Stdin.Stat()
 	if err != nil {
 		os.Exit(1)
